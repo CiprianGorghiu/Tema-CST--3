@@ -1,0 +1,21 @@
+<div class="center">
+<nz-card  style="width:300px;">
+    <div class="margin">
+        <div class="space">
+    <input   class="list"  type="text" placeholder="Text to filter" [(ngModel)]="filterText">
+    <button   nz-button nzType="primary" (click)="filter()">Filtru</button>
+    <input type="text" placeholder="text to add to list" [(ngModel)]="newItem">
+    <button  nz-button nzType="primary" (click)="addItem()">Adauga</button>
+    <input type="text" placeholder="text do delete from list" [(ngModel)]="itemToDelete">
+    <button nz-button nzType="primary" (click)="deleteItem()">Sterge</button>
+        </div>
+    <nz-card  style="width:200px;" >
+    <ul>
+    <li *ngFor="let item of items | filter:filterText">{{item}}</li>
+    </ul>
+    <button  nz-button (click)="sort()">Sorteaza alfabetic</button>
+    </nz-card>
+</div>
+</nz-card>
+</div>
+

@@ -1,0 +1,35 @@
+
+.list
+{
+    display: inline-block;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li
+{
+    margin: 0;
+}
+
+
+.center
+{
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+.margin
+{
+margin:20px;
+}
+
+.space:no-button
+{
+    display: flex;
+    flex-direction: column;
+}
